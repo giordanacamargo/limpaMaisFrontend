@@ -1,0 +1,20 @@
+.inputCpfCnpj {
+    margin-top: -1.5rem;
+}
+
+.label-cpf-cnpj {
+    font-size: smaller;
+}
+
+.label-cpf-cnpj .p-radiobutton-box {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.inputTextCpfCnpj {
+    margin-top: -1.3rem;
+}
+
+.inputCpfCnpjRadios {
+    margin-left: -1.1rem;
+}

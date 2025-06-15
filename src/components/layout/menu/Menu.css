@@ -1,0 +1,60 @@
+.menu {
+    background: var(--surface-card);
+}
+
+.logoEmpresa {
+    height: 63px;
+    width: 95px;
+    margin-right: 20px;
+}
+
+.p-megamenu {
+    border: none !important;
+}
+
+.fundo {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.p-menuitem-link:hover {
+    text-decoration: none;
+}
+
+/* Estilos para o card do usuário */
+.usuario-card {
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    background-color: var(--surface-100);
+}
+
+.usuario-card:hover {
+    background-color: var(--surface-50) !important;
+}
+
+/* Estilos para o submenu */
+.usuario-submenu .p-menu {
+    width: 200px;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbmenu {
+    padding-top: 1rem;
+}
+
+/* Ajuste de posicionamento */
+.p-megamenu-end {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* Badge para notificações (opcional) */
+.p-overlay-badge {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.p-megamenu-root-list dl, ol, ul {
+    margin-bottom: 0px !important;
+}
