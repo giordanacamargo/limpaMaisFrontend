@@ -225,6 +225,11 @@ const Menu = () => {
                                 icon: 'pi pi-inbox',
                                 command: () => handleGoToPath('/estoque/recebimento/materias_primas')
                             },
+                            {
+                                label: 'Accuracy Dashboard',
+                                icon: 'pi pi-inbox',
+                                command: () => handleGoToPath('/estoque/recebimento/accuracy_dashboard')
+                            },
                         ]
                     },
                 ],

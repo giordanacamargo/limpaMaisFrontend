@@ -4,6 +4,7 @@ import axios from "../api/axios";
 const useRefreshToken = () => {
     const {setAuth} = useAuth();
 
+    let refresh;
     return refresh = async () => {
         const response = await axios.get('/refresh', {
             withCredentials: true
