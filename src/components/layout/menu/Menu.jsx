@@ -126,15 +126,20 @@ const Menu = () => {
                     {
                         label: 'Produção',
                         items: [
-                            // {
-                            //     label: 'Formulações',
-                            //     icon: 'fa fa-glass',
-                            //     // command: () => handleGoToPath('/formulacao')
-                            // },
+                            {
+                                label: 'EPIs',
+                                icon: 'fa fa-glass',
+                                command: () => handleGoToPath('/cadastro/producao/epis')
+                            },
+                            {
+                                label: 'Formulações',
+                                icon: 'fa fa-glass',
+                                // command: () => handleGoToPath('/formulacao')
+                            },
                             {
                                 label: 'Matérias Primas',
                                 icon: 'fa fa-flask',
-                                command: () => handleGoToPath('/cadastro/materias_primas')
+                                command: () => handleGoToPath('/cadastro/producao/materias_primas')
                             }
                         ]
                     },
@@ -179,39 +184,39 @@ const Menu = () => {
                 ],
             ]
         },
-        // {
-        //     label: 'Produção',
-        //     icon: 'fa fa-cogs',
-        //     items: [
-        //         [
-        //             {
-        //                 label: 'Central de Produção',
-        //                 items: [
-        //                     {
-        //                         label: 'Ordens de Produção',
-        //                         icon: 'fa fa-gavel',
-        //                         // command: () => handleGoToPath('/ordens_producao')
-        //                     },
-        //                     {
-        //                         label: 'Histórico',
-        //                         icon: 'fa fa-history',
-        //                         // command: () => handleGoToPath('/historico_producao')
-        //                     }
-        //                 ]
-        //             },
-        //             {
-        //                 label: 'Lotes',
-        //                 items: [
-        //                     {
-        //                         label: 'Lotes gerados',
-        //                         icon: 'fa fa-inbox',
-        //                         // command: () => handleGoToPath('/lotes')
-        //                     }
-        //                 ]
-        //             }
-        //         ],
-        //     ]
-        // }
+        {
+            label: 'Produção',
+            icon: 'fa fa-cogs',
+            items: [
+                [
+                    {
+                        label: 'Central de Produção',
+                        items: [
+                            {
+                                label: 'Ordens de Produção',
+                                icon: 'fa fa-gavel',
+                                // command: () => handleGoToPath('/ordens_producao')
+                            },
+                            {
+                                label: 'Histórico',
+                                icon: 'fa fa-history',
+                                // command: () => handleGoToPath('/historico_producao')
+                            }
+                        ]
+                    },
+                    {
+                        label: 'Lotes',
+                        items: [
+                            {
+                                label: 'Lotes gerados',
+                                icon: 'fa fa-inbox',
+                                // command: () => handleGoToPath('/lotes')
+                            }
+                        ]
+                    }
+                ],
+            ]
+        },
         {
             label: 'Estoque',
             icon: 'pi pi-warehouse',
