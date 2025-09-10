@@ -20,6 +20,7 @@ import {AuthProvider} from "./context/AuthProvider";
 import Unauthorized from "./components/authentication/Unauthorized";
 import RegistrationPage from "./components/layout/login/RegistrationPage";
 import RecebimentoMateriasPrimas from "./components/estoque/recebimento_mercadorias/RecebimentoMateriasPrimas";
+import AccuracyDashboard from "./components/estoque/AccuracyDashboard";
 
 const ROLES = {
     'ROLE_USER': 'ROLE_USER',
@@ -104,6 +105,14 @@ const router = createBrowserRouter([
                 element: (
                     <RequireAuth allowedRoles={[ROLES.ROLE_ADMIN]}>
                         <RecebimentoMateriasPrimas/>
+                    </RequireAuth>
+                )
+            },
+            {
+                path: "/estoque/recebimento/accuracy_dashboard",
+                element: (
+                    <RequireAuth allowedRoles={[ROLES.ROLE_ADMIN]}>
+                        <AccuracyDashboard/>
                     </RequireAuth>
                 )
             },
