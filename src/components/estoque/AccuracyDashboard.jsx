@@ -33,8 +33,8 @@ const DashboardMetricas = () => {
 
         // Carregar ambos os CSVs em paralelo
         Promise.all([
-            loadCSVData("/mixtral-total.csv"),
-            loadCSVData("/deepseek-total.csv")
+            loadCSVData("/mixtral-final.csv"),
+            loadCSVData("/deepseek-final.csv")
         ])
             .then(([dadosMixtral, dadosDeepseek]) => {
                 prepararGraficos(dadosMixtral, dadosDeepseek);
@@ -345,7 +345,7 @@ const DashboardMetricas = () => {
             <PageTitle pageTitle={"Análise de resultados"} icon={"fa fa-dashboard"} />
             <div className="flex col-md-12">
                 <div className="col-md-6">
-                    <h2 className="text-2xl mb-4">Mixtral</h2>
+                    <h2 className="text-2xl mb-4">mixtral:8x7b</h2>
                     {chartsDataMixtral.header && (
                         <>
                             <div className="card">
@@ -375,7 +375,7 @@ const DashboardMetricas = () => {
                                     }}
                                 />
                             </div>
-
+                            <h2 className="text-2xl mb-4">mixtral:8x7b</h2>
                             <div className="card">
                                 <h3 className="text-xl mb-4">Tempo de Execução (ms)</h3>
                                 <Chart
@@ -394,7 +394,7 @@ const DashboardMetricas = () => {
                 </div>
 
                 <div className="col-md-6">
-                    <h2 className="text-2xl mb-4">Deepseek</h2>
+                    <h2 className="text-2xl mb-4">deepseek-r1:32b</h2>
                     {chartsDataDeepseek.header && (
                         <>
                             <div className="card">
@@ -424,7 +424,7 @@ const DashboardMetricas = () => {
                                     }}
                                 />
                             </div>
-
+                            <h2 className="text-2xl mb-4">deepseek-r1:32b</h2>
                             <div className="card">
                                 <h3 className="text-xl mb-4">Tempo de Execução (ms)</h3>
                                 <Chart
